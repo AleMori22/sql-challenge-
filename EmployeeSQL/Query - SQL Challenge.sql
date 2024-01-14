@@ -34,6 +34,7 @@ dept_manager.dept_no = departments.dept_no
 INNER JOIN employees ON
 dept_manager.emp_no = employees.emp_no;
 
+
 --List the department number for each employee along with that employee’s employee number, 
 --last name, first name, and department name
 
@@ -61,6 +62,8 @@ WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
 
 --List each employee in the Sales department, 
 --including their employee number, last name, and first name.
+
+-- JOIN Method
 
 SELECT employees.emp_no
 , employees.first_name
@@ -99,8 +102,6 @@ employees.emp_no = dept_emp.emp_no
 INNER JOIN departments ON
 departments.dept_no = dept_emp.dept_no
 WHERE dept_name = 'Sales' OR dept_name = 'Development' ;
-
-
 
 
 --List the frequency counts, in descending order,
